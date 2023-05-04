@@ -1,17 +1,32 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import React, { useState } from "react";
-import Navbar from '@/Components/Navbar';
-import Header from '@/Components/Header';
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from '../components/header';
+import Main from '../components/main';
+import FDescription from '../components/first-description';
+import SDescription from '../components/second-sedcription';
+import Quote from '../components/quote';
+import Card from '../components/card';
+import FAQ from '../components/faq';
+import FreeTrial from '../components/freeTrial';
+import Footer from '../components/footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <main>
-      <Header/>
-      <Navbar/>
-    </main>
-
-  )
+    <>
+      <Header />
+      <Main />
+      <FDescription />
+      <SDescription />
+      <Quote />
+      <Card />
+      <FAQ />
+      <FreeTrial />
+      <Footer />
+    </>
+  );
 }
+
