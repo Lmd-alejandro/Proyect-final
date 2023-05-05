@@ -1,4 +1,4 @@
-const quote = () => {
+const Quote = () => {
     return (
       <section className="bg-gray-50 dark:bg-gray-800">
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
@@ -59,4 +59,4 @@ const quote = () => {
     );
   };
   
-  export default quote;
+  export default Quote;

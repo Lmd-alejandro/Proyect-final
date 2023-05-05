@@ -1,15 +1,16 @@
-import Header from '../components/header';
-import Main from '../components/main';
-import FDescription from '../components/first-description';
-import SDescription from '../components/second-sedcription';
-import Quote from '../components/quote';
-import Card from '../components/card';
-import FAQ from '../components/faq';
-import FreeTrial from '../components/freeTrial';
-import Footer from '../components/footer';
+import Header from '@/Components/Header';
+import Main from '@/Components/Main';
+import Firstdescription from '@/Components/Fdescription';
+import Seconddescription from '@/Components/Sdescription';
+import Quote from '@/Components/quote';
+import Card from '@/Components/card';
+import FAQ from '@/Components/faq';
+import FreeTrial from '@/Components/freetrial';
+import Navbar from '@/Components/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+
 
 export default function Home() {
   useEffect(() => {
@@ -19,13 +20,13 @@ export default function Home() {
     <>
       <Header />
       <Main />
-      <FDescription />
-      <SDescription />
+      <Firstdescription />
+      <Seconddescription />
       <Quote />
       <Card />
       <FAQ />
       <FreeTrial />
-      <Footer />
+      <Navbar />
     </>
   );
 }

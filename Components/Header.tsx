@@ -1,16 +1,12 @@
-const header = () => {
+const Header = () => {
     return (
       <header className="fixed w-full">
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <a href="#" className="flex items-center">
-              <img
-                src="/logo.svg"
-                className="h-6 mr-3 sm:h-9"
-                alt="Landwind Logo"
-              />
+              
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                Landwind
+                Welcome To My Portfolio
               </span>
             </a>
             <div className="flex items-center lg:order-2">
@@ -119,4 +115,4 @@ const header = () => {
     );
   };
   
-  export default header;
+  export default Header;
